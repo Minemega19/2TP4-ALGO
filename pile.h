@@ -10,13 +10,14 @@ typedef struct Pile {
 	struct maillonPile* pile;
 }Pile;
 
-/*
-
-
-
+/* 
+Cette procédure permet de sauvegarder une instance de file d'attente dans la pile
+Entrées :  file de type FileAttente et Pointeur pile
+Préconditions : La file doit exister et la pile doit exister et etre initialisées
+Postconditions : La pile comporte un maillon
 */
 
-void empiler();
+void empiler(FileAttente* file, Pile* pile);
 
 /*
 
@@ -25,5 +26,9 @@ void empiler();
 */
 
 void depiler();
+
+void initPile();
+
+void desinitPile();
 
 #endif
