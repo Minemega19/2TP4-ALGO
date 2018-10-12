@@ -3,6 +3,11 @@
 #include "pile.h"
 using namespace std;
 
+
+void empiler(FileAttente* file, Pile* pile) { //FileAttente* file == FileAttente *file == pointeur
+
+}
+
 FileAttente initFileAttente() {
 	FileAttente file;
 	file.tete = NULL;
@@ -10,9 +15,9 @@ FileAttente initFileAttente() {
 	return file;
 }
 
-void retirerEnTete(FileAttente* pf) {
+void retirerEnTete(FileAttente* pf) { // *pf == contenu
 	maillon* p;
-	if ((*pf).tete != NULL) {
+	if ((*pf).tete != NULL) { 
 		p = (*pf).tete;
 		(*pf).tete = (*(*pf).tete).suivant;
 		delete(p);
