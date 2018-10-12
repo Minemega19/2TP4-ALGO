@@ -1,5 +1,6 @@
 #include <iostream>
 #include "fileAttente.h"
+#include "pile.h"
 using namespace std;
 
 FileAttente initFileAttente() {
