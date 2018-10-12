@@ -17,15 +17,16 @@ Préconditions : La file doit exister et la pile doit exister et etre initialisée
 Postconditions : La pile comporte un maillon
 */
 
-void empiler(FileAttente* file, Pile* pile);
+void empiler(FileAttente file, Pile* pile);
 
 /*
 
 
 
+
 */
 
-void depiler();
+void depiler(FileAttente* file, Pile* pile);
 
 void initPile();
 

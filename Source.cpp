@@ -4,8 +4,22 @@
 using namespace std;
 
 
-void empiler(FileAttente* file, Pile* pile) { //FileAttente* file == FileAttente *file == pointeur
+void empiler(FileAttente file, Pile* pp) { //FileAttente* file == FileAttente *file == pointeur
+	FileAttente filetemp;
+	if (file.tete != NULL) {
+		filetemp = file;
+		(*pp).pile->file = filetemp;
+	}
+	else {
+		cout << " Impossible de faire la sauvegarde d'une file existante " << endl;
+	}
+}
 
+void depiler(FileAttente* file, Pile* pile) {
+	
+	if ((*pile).pile != NULL) {
+		 
+	}
 }
 
 FileAttente initFileAttente() {
