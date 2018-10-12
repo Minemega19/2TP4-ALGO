@@ -83,7 +83,8 @@ void afficheMenu() {
 	cout << " 2 - Retirer la personne en tete " << endl;
 	cout << " 3 - Consulter la personne en tete de file " << endl;
 	cout << " 4 - Calculer la longueur de la file d'attente " << endl;
-	cout << " 5 - Quitter " << endl;
+	cout << " 5 - Undo ";
+	cout << " 6 - Quitter " << endl;
 }
 
 int main() {
@@ -121,6 +122,10 @@ int main() {
 			break;
 
 		case 5:
+			cout << " Reviens en arrière ... " << endl;
+			break;
+
+		case 6:
 			cout << " Fin du programme ... " << endl;
 			desinitFileAttente(pf);
 			break;
